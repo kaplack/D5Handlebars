@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <a href="/">Home</a>
+</nav>
+<section class="row">
+    <div class="content-box">
+    <h2> Lista de Productos</h2>
+    {{#if listExists}}
+        <ul class="products">
+        {{#each products}}
+            <li class="products__item">
+                <h2>{{this.title}}</h2>
+                <p>Precio: ${{this.price}}</p>
+                <img src={{this.thumbnail}}>
+            </li>
+        {{/each}}
+        </ul>
+    {{else}}
+        <h2>No hay productos</2>
+    {{/if}}
+    </div>
+</section>
+

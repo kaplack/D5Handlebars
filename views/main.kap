@@ -1,0 +1,26 @@
+
+<nav class="navbar">
+  <a href="/productos">Productos</a>
+</nav>
+<section>
+  <div class="content-box">
+    <h1>Ingresa un nuevo producto</h1>
+      <form
+        id="formulario"
+        action="productos"
+        enctype="multipart/form-data"
+        method="post"
+      >
+        <div class="formInput">
+          <input id="name" type="text" placeholder="Nombre" name="title" />
+        </div>
+        <div class="formInput">
+          <input id="price" type="number" placeholder="Precio" name="price" />
+        </div>
+        <div class="formInputFile">
+          <input id="file" type="file" name="myFile" />
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+  </div>
+</section>
